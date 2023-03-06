@@ -1,0 +1,26 @@
+lockfileVersion: 5.4
+
+specifiers:
+  chalk: ^5.2.0
+  cli-frames: ^2.2.10
+
+dependencies:
+  chalk: 5.2.0
+  cli-frames: 2.2.10
+
+packages:
+
+  /chalk/5.2.0:
+    resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: false
+
+  /cli-frames/2.2.10:
+    resolution: {integrity: sha512-u5eKaNbAT4cCrCQt+sqd1ElYuGl25jH+ZAXSw2nhHvJJWTFhomIcOIseVOHboYZE9LEuh9fAIEGc81FZy62mxQ==}
+    dependencies:
+      cli-update: 2.0.0
+    dev: false
+
+  /cli-update/2.0.0:
+    resolution: {integrity: sha512-2rOxdm4bKEUZ1udIG4HyCWroJ5bS5afNTHzGQS6A5pWIyBTIelLt1qlTNxlLS+jyNwnepHX0I5LUQ33KPdoe0w==}
+    dev: false

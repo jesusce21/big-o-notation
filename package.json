@@ -1,0 +1,16 @@
+{
+  "name": "saerch-find-o-n",
+  "version": "1.0.0",
+  "description": "Performance Testing",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "search": "node search.js",
+    "sort": "node sort.js"
+  },
+  "author": "Jesús Cabezas",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0"
+  }
+}
