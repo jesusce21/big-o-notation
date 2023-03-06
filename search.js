@@ -40,24 +40,15 @@ const configs = {
         datasets: {shortList, mediumList}, 
         useCases: {firstElement, halfListElement, lastElement},
         gif: 'https://media.tenor.com/Jl0YrqxnHmAAAAAd/binary-search-sequence-search.gif',
-        description: `
-La función binarySearch toma un array ordenado arr y un valor target como parámetros y devuelve el índice del valor target en el array arr, o -1 si no se encuentra.
-
-La implementación utiliza un bucle while para iterar sobre el array. En cada iteración, calcula el índice del valor medio del array y lo compara con el valor target. Si son iguales, devuelve el índice medio. Si el valor medio es menor que target, la búsqueda se concentra en la mitad derecha del array, por lo que actualiza el índice left para que apunte al siguiente elemento a la derecha del valor medio. Si el valor medio es mayor que target, la búsqueda se concentra en la mitad izquierda del array, por lo que actualiza el índice right para que apunte al elemento anterior a la izquierda del valor medio.
-        
-La búsqueda binaria es un algoritmo de búsqueda muy eficiente que tiene una complejidad temporal de O(log n) en el peor de los casos.`,
+        description: `Binary search is a search algorithm that is used to find a specific element in a sorted list or array. It works by repeatedly dividing the search interval in half until the target element is found or it is determined that the element is not in the list.`,
     },
 
     'linear-search': {
         method: linearSearch, 
         datasets: {shortList, mediumList}, 
         useCases: {firstElement, halfListElement, lastElement},
-        gif: 'https://www.tutorialspoint.com/data_structures_algorithms/images/linear_search.gif',
-        description: `La función linearSearch toma un array arr y un valor target como parámetros y devuelve el índice del valor target en el array arr, o -1 si no se encuentra.
-
-La implementación utiliza un bucle for para iterar sobre el array. En cada iteración, comprueba si el valor actual en el array es igual al valor target. Si son iguales, devuelve el índice actual. Si no se encuentra el valor target, la función devuelve -1 después de recorrer todo el array.
-        
-La búsqueda lineal es un algoritmo de búsqueda sencillo y directo, pero puede ser menos eficiente que otros algoritmos de búsqueda en arrays grandes. La complejidad temporal de la búsqueda lineal es O(n) en el peor de los casos, donde n es el número de elementos en el array.`,
+        gif: 'https://skilled.dev/images/linear-search.gif',
+        description: `Linear search, also known as sequential search, is a simple search algorithm that sequentially checks each element in a list or array until a match is found or the end of the list is reached.`,
     }
 }
 
