@@ -39,16 +39,16 @@ Selection sort is another simple sorting algorithm that works by repeatedly find
 
 ## Insertion sort
 ![Insertion Sort](https://miro.medium.com/v2/resize:fit:1400/1*bmfRxyIQZEK0Iu5T6YV1sw.gif)
+
 Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It works by iterating through an array of values, comparing each value to its adjacent values, and swapping them if they are in the wrong order. 
 
 
 ## Merge sort
 ![Merge Sort](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif?20151222172210)
+
 Merge Sort is a divide and conquer sorting algorithm that works by breaking down an array into smaller sub-arrays, sorting those sub-arrays, and then merging them back together to form a sorted array. 
 
 ## Quick sort
 ![Quick Sort](https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif)
+
 Quick Sort is a divide and conquer sorting algorithm that works by partitioning an array into two sub-arrays, one containing elements smaller than a chosen pivot and the other containing elements larger than the pivot. The pivot is then placed in its final position in the sorted array, and the same process is applied recursively to the sub-arrays until the entire array is sorted
-
-
-
