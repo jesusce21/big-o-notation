@@ -1,7 +1,7 @@
 # Big O notation:
-Big O notation is a way of expressing the upper bound or worst-case complexity of an algorithm. It is commonly used in computer science to describe how the runtime or memory requirements of an algorithm scale with the size of the input data. [Big O notation cheatsheet](https://www.bigocheatsheet.com/)
+Big O notation is a way of expressing the upper bound or worst-case complexity of an algorithm. It is commonly used in computer science to describe how the runtime or memory requirements of an algorithm scale with the size of the input data. [Big O notation cheatsheet](https://www.bigocheatsheet.com/), [Big O notation cheatsheet (Javascript)](https://flexiple.com/algorithms/big-o-notation-cheat-sheet/)
 
-![Big O notation](https://cdn-media-1.freecodecamp.org/images/1*KfZYFUT2OKfjekJlCeYvuQ.jpeg)
+![Big O  notation](https://cdn-media-1.freecodecamp.org/images/1*KfZYFUT2OKfjekJlCeYvuQ.jpeg)
 
 
 
