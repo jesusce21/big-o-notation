@@ -6,7 +6,7 @@ export function firstElement (arr) {
 }
 
 export function halfListElement (arr) {
-    return arr[Math.ceil(arr.length - 1 /2)]
+    return arr[Math.ceil((arr.length - 1) /2)]
 }
 
 export function lastElement (arr) {
