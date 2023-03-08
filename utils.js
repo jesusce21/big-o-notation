@@ -24,7 +24,7 @@ export function executeConfig(configs) {
             Object.entries(useCases).forEach(([useCaseName, useCase]) => {
                 const target = useCase(dataset);
     
-                const consoleTimeToken = `${datasetName} - ${useCaseName}`
+                const consoleTimeToken = `${datasetName} - ${useCaseName} - elements (${dataset.length})`
                 console.time(consoleTimeToken)
                 const returnedValue = method(dataset, target)
                 console.timeEnd(consoleTimeToken)

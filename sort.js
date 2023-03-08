@@ -2,6 +2,8 @@
 
 import { shortList } from './data/short-list.js';
 import { mediumList } from './data/medium-list.js';
+import { bigList } from './data/big-list.js'
+import { enormousList } from './data/enormous-list.js'
 import { executeConfig} from './utils.js';
 
 function bubbleSort(arr) {
@@ -47,22 +49,16 @@ function bubbleSort(arr) {
     return [arr[0], arr[arr.length-1]];
   }
 
-  function insertionSort(arr) {
-    const n = arr.length;
-  
-    for (let i = 1; i < n; i++) {
-      const current = arr[i];
-      let j = i - 1;
-  
-      while (j >= 0 && arr[j] > current) {
-        arr[j + 1] = arr[j];
-        j--;
+  function insertionSort(nums) {
+    for (let i=1; i<nums.length; i++) {
+      for (let j=i; j>0; j--) {
+          if (nums[j] < nums[j-1]) {
+              [nums[j-1], nums[j]] = [nums[j], nums[j-1]];
+          }
       }
-  
-      arr[j + 1] = current;
     }
   
-    return [arr[0], arr[arr.length-1]];
+    return [nums[0], nums[nums.length-1]];
   }
 
   function mergeSort(arr) {
@@ -153,7 +149,7 @@ function bubbleSort(arr) {
     },
     'insertion-sort': {
         method: insertionSort, 
-        datasets: {shortList, mediumList}, 
+        datasets: {shortList, mediumList, bigList}, 
         gif: 'https://miro.medium.com/v2/resize:fit:1400/1*bmfRxyIQZEK0Iu5T6YV1sw.gif',
         useCases: {defaultCase},
         description: `La función insertionSort toma un array arr como parámetro y devuelve el array ordenado. La implementación utiliza dos bucles: el bucle exterior itera sobre cada elemento del array, y el bucle interior mueve los elementos mayores que el elemento actual a la derecha del array. Una vez que se encuentra la posición correcta para el elemento actual, se inserta en el array en esa posición.
@@ -162,14 +158,14 @@ La complejidad temporal del algoritmo de ordenamiento por inserción es O(n^2) e
     },
     'merge-sort': {
         method: mergeSort, 
-        datasets: {shortList, mediumList}, 
+        datasets: {shortList, mediumList, bigList, enormousList}, 
         useCases: {defaultCase},
         gif: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif?20151222172210',
         description: `Merge Sort is a divide and conquer sorting algorithm that works by breaking down an array into smaller sub-arrays, sorting those sub-arrays, and then merging them back together to form a sorted array.`,
     },
     'quick-sort': {
         method: quickSortWrap, 
-        datasets: {shortList, mediumList}, 
+        datasets: {shortList, mediumList, bigList, enormousList}, 
         useCases: {defaultCase},
         gif: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif",
         description: `Quick Sort is a divide and conquer sorting algorithm that works by partitioning an array into two sub-arrays, one containing elements smaller than a chosen pivot and the other containing elements larger than the pivot. The pivot is then placed in its final position in the sorted array, and the same process is applied recursively to the sub-arrays until the entire array is sorted.`,
